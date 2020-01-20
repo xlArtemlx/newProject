@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 90px;
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 120px;
+    background-color: black;
+}
+
+nav #menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 400px;
+	height: 100px;
+	position: relative;
+}
+
+
+#menu a {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#menu a:not(.icon):hover {
+	border-bottom: solid 4px #fc635e;
+}
+#menu a:hover {
+	color: #fc635e;
+}
+
+nav .icon {
+	position: absolute;
+	right: 5%;
+    top: 30%;
+    display: none;
+}
+// 1 слайд
+.bg {
+	background: url("../media/background_1.png") no-repeat center top / cover ;
+	height: 90vh;
+	background-size: cover;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    flex-direction: column;
+}
+.introduce {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    flex-direction: column;
+    
+    h1 {
+        font-size: 50px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+.client_buttom {
+    padding: 20px 30px;
+    border: solid 3px #fc635e;
+    border-radius: 10px;
+    color:  #fc635e;
+    font-size: 20px;
+    cursor: pointer;
+}
+.first_word {
+    color: #fc635e;
+}
+
+.client_buttom:hover {
+    opacity: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9);
+	transition: 0.5s;
+}
+.arrow {
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	border-radius: 100px;
+}
+.arrow:hover {
+	transform: scale(1.2, 1.2);
+}
