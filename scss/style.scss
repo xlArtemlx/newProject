@@ -1,3 +1,4 @@
+@import "mixins.scss";
 * {
 	margin: 0;
 	padding: 0;
@@ -117,4 +118,15 @@ nav .icon {
 }
 .arrow:hover {
 	transform: scale(1.2, 1.2);
+}
+// slide 3
+.second {
+    @include slide;
+}
+.box {
+    @include box;
+}
+.second_box{
+    width: 1260px;
+    display: flex;
 }
