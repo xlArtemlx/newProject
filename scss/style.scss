@@ -7,6 +7,9 @@ html,
 body {
 	height: 100%;
 }
+// img{
+//     width: 100%;
+// }
 body {
 box-sizing: border-box;
 	min-height: 100%;
@@ -125,8 +128,109 @@ nav .icon {
 }
 .box {
     @include box;
+    margin: 5px;
+    h2 {
+        margin-top: 22px;
+        padding: 12px;
+        margin-bottom: 28px;
+        border-bottom: solid 1px #868686;
+        color: #868686;
+    }
+    img {
+        margin: 5px;
+    }
+    p {
+        color: #868686;
+        width: auto;
+        text-align: center;
+    }
 }
 .second_box{
     width: 1260px;
     display: flex;
 }
+.second_text{
+    color: #fc635e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:  15%;
+    width: 50%;
+    h2 span {
+        color: #868686;
+    }
+    h2 {
+        border-bottom: solid 2px #868686;
+        padding-bottom: 15px;
+        font-size: 28px;
+   }
+   p {
+	color: #868686;
+	font-size: 18px;
+    margin-top: 10px;
+   }
+   
+}
+//slide 2
+//slide 3
+.slide_3 {
+	background: url(../media/Slide3.png) no-repeat center top / cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    height: 576px;
+    span {
+        font-size: 40px;
+        text-transform: uppercase;
+        color:#ffffff;
+    }
+    .slide_3border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 8px solid rgba(0,0,0,0.1);
+        align-self: center;
+        margin: 0 auto;
+        width: 74.6%;
+        height: 65%;
+    }
+    .join_buttom {
+        margin-top: 70px;
+        padding: 20px;
+        border: solid 3px #fc635e;
+        border-radius: 10px;
+        opacity: 70%;
+        cursor: pointer;
+        position: relative;
+        color: #fc635e;
+        font-size: 36px;
+        text-transform: uppercase;
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: 0.5s;
+        }
+    }
+}
+.fist_word  {
+	color: #fc635e;
+	font-size: 36px;
+}
+
+//slide 3
+//slide 5
+.slide_5 {
+    @include slide;
+}
+.slide_5_content {
+    display: flex;
+    width: 75%;
+    height: 56%;
+    .slide_5_img {
+        width: 35%;
+    }
+}
+//slide 5
